@@ -8,8 +8,8 @@ def gaussian_blur_kernel_2d(sigma, height, width):
     kernel = np.zeros((height,width))
 
     # 몫으로 중심 생성
-    h_center = height / 2.0
-    w_center = width / 2.0
+    h_center = height // 2
+    w_center = width // 2
 
     # 상대좌표를 구하고 각각을 가우시안 함수에 적용하여 커널 생성
     for h in range(height) :
